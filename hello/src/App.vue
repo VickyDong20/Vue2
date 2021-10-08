@@ -1,28 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div>
+    <hello></hello>
+ 
+  <storage></storage>
+
+ 
+<!-- <h1 v-show="isLoginin">{{message}}</h1>
+
+<ul>
+  <li v-for="(fruit,index) of fruits" :key="index">
+    <p>fruit name:{{fruit}}</p>
+    <p>number:{{index}}</p>
+  </li>
+</ul>
+<table>
+  <thead>
+  <th>name</th>
+  <th>gender</th></thead>
+  <tbody>
+  <tr v-for="(student,index) of students" :key="index">
+    <td>{{student.name}}</td>
+    <td>{{student.gender}}</td>
+  </tr>
+  </tbody>
+</table> -->
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import hello from "./components/hello.vue";
+import storage from './components/storage.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+export default{
+  components: { hello, storage },
+  data(){
+    return{
+//message:'Welcom to our fruits shop',
+     // isLoginin:'true',
+     // fruits:['strawberry','blueberry','cherry','banana'],
+        //students:[{name:'li',gender:'female'},{name:'jack',gender:'male'}],
+  }}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
