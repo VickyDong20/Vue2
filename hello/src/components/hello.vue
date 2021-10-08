@@ -1,8 +1,12 @@
 <template>
-    <h1>Welcome to visit our fruits store</h1>
+    <h1>{{msg}}</h1>
 </template>
 <script>
-
+export default{
+     props:['msg']
+    
+  
+}
 </script>
 
 <style scoped>

@@ -1,6 +1,6 @@
 <template>
 <div>
-    <hello></hello>
+    <hello :msg="message"></hello>
  
   <storage></storage>
 
@@ -35,7 +35,7 @@ export default{
   components: { hello, storage },
   data(){
     return{
-//message:'Welcom to our fruits shop',
+message:'Welcom to our fruits shop',
      // isLoginin:'true',
      // fruits:['strawberry','blueberry','cherry','banana'],
         //students:[{name:'li',gender:'female'},{name:'jack',gender:'male'}],
