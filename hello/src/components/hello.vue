@@ -9,7 +9,7 @@ export default{
      props:['msg'],
      data(){
          return{
-             helloData:'i am child'
+             helloData:'i am a child data'
          }
      },
      
