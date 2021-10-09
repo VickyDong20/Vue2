@@ -1,6 +1,7 @@
 <template>
 <div>
-    <hello :msg="message"></hello>
+  <h1>{{helloData}}</h1>
+    <hello @myevent='changedata' :msg="message"></hello>
  
   <storage></storage>
 
@@ -39,7 +40,15 @@ message:'Welcom to our fruits shop',
      // isLoginin:'true',
      // fruits:['strawberry','blueberry','cherry','banana'],
         //students:[{name:'li',gender:'female'},{name:'jack',gender:'male'}],
-  }}
+  helloData:'',
+
+  
+  }},
+  methods:{
+    changedata(helloData){
+this.helloData=helloData
+    }
+  }
 }
 </script>
 
